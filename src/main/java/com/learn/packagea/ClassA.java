@@ -12,5 +12,6 @@ package com.learn.packagea;
 //To run command:- java -cp classes packagea.ClassA// but is will not run because it does not have main method.
                  //java -classpath classes packagea.ClassA
                    //java --class-path classes packagea.ClassA
+
 public class ClassA {
 }
