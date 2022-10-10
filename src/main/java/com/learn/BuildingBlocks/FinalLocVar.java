@@ -10,7 +10,7 @@ public class FinalLocVar {
         favoriteNumbers[0] = 10;
         favoriteNumbers[0] = 30;
         favoriteNumbers[1] = 20;
-        //favoriteNumbers = null;//we can change the content or value in the array,but cannot change the value
+        //favoriteNumbers = null;//Does not compile.we can change the content or value in the array,but cannot change the value
                                  // of reference
     }
 }
