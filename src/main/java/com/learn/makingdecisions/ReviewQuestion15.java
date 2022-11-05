@@ -7,7 +7,7 @@ public class ReviewQuestion15 {
        switch (grade){
            default:
            case a:
-           //case 'B':'C':System.out.println("great");//Does not compile,because instead of colon comma should be use to separate
+          // case 'B':'C':System.out.println("great");//Does not compile,because instead of colon comma should be use to separate
                //combined case statements.
            case 'D':
                System.out.println("good");break;
