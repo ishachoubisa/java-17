@@ -8,7 +8,7 @@ public class ReviewQuestion23 {
             System.out.println("success");
         else
             System.out.println("failure");
-//        else if(penguin!=50)//Does not compile. where is if statement.
+//        else if(penguin!=50)//Does not compile. where is if statement for this else statement.
 //            System.out.println("Others");
     }
 }
