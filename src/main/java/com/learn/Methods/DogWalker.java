@@ -10,5 +10,6 @@ public class DogWalker {
         walkDog(1,2);
         walkDog(1,2,3);
         walkDog(1,new int[]{4,5});
+        //walkDog(1,null);
     }
 }
