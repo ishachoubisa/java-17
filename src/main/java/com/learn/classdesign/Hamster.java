@@ -14,7 +14,7 @@ public class Hamster {
     //Calling first constructor in second constructor
     public Hamster(int weight) {//Second constructor
         this(weight,"brown");//Now Java calls the constructor that takes two parameter,with weight and color
-                                   //set as expected
+                                   //set as expected.This must be the first statement in the constructor.
 
         System.out.println(weight);
         System.out.println(color);
