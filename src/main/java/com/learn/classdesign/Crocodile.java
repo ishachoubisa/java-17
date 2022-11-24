@@ -9,9 +9,12 @@ public class Crocodile extends Reptile{
 //        return speed;
 //    }
 
+//    public int getSpeed(){
+//        return speed;//Java first check to see if there is a local variable or method parameter named speed.Since there is
+//                    // not,it then checks this.speed and since it exists,the program prints 20
+//    }
     public int getSpeed(){
-        return speed;//Java first check to see if there is a local variable or method parameter named speed.Since there is
-                    // not,it then checks this.speed and since it exists,the program prints 20
+        return super.speed;//it will print speed of super class. i.e. 10
     }
 
     public static void main(String[] data) {
