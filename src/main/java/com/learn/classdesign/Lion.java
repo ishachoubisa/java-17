@@ -1,6 +1,6 @@
 package com.learn.classdesign;
 
-public class Lion extends Animal{
+public class Lion extends AnimalLion {
     public void setProperties(int age,String n){
         setAge(age);//age is private variable in Animal class(parent) but it can be indirectly access through public method
                     // of that class by calling in subclass Lion public method.

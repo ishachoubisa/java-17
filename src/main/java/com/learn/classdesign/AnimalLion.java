@@ -1,6 +1,6 @@
 package com.learn.classdesign;
 
-public class Animal {
+public class AnimalLion {
     private int age;
     protected String name;
     public int getAge(){
