@@ -15,7 +15,8 @@ public class Crocodile extends Reptile{
     }
 
     public static void main(String[] data) {
-        var croc = new Crocodile();
+        var croc = new Crocodile();//the instance of Crocodile stores two separate values for speed,one at Reptile level
+                                   //one at Crocodile level
         System.out.println(croc.getSpeed());//it will check for this.speed(instance variable speed of subclass Crocodile) and
                                             // print 20.
     }
