@@ -27,6 +27,12 @@ public class Home {
     public static void main(String args[]){
         var home = new Home();//create outer class instance
         home.enterRoom();
+
+        var home1 = new Home();
+        Room room = home.new Room();//we cannot just call new Room() inside static main() method,because java dont know which
+                                    //instance of Home it is associated with.
+        room.enter();
+        new Home().new Room().enter();
     }
 
 }
