@@ -1,6 +1,10 @@
 package com.learn.BeyondClasses;
 
 //Inner class,it can include static variables and methods.
+//can be declare public,protected,package or private.
+//can extend class or implement interface.
+//can be marked abstract or final.
+//can access members of outer class,including private members
 
 public class Home {
     private String greetings = "Hi";//outer class instance variable
