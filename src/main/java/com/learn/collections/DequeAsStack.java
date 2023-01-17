@@ -12,6 +12,8 @@ public class DequeAsStack {
         System.out.println(deque);
         deque.push(4);
         System.out.println(deque);
+        deque.peek();
+        System.out.println(deque);
         deque.poll();
         System.out.println(deque);
         deque.poll();
