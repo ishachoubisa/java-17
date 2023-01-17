@@ -3,6 +3,7 @@ package com.learn.collections;
 import java.util.Deque;
 import java.util.LinkedList;
 
+//Deque works as a double-ended queue,we can insert and remove element from both side.
 public class DequeueMethods {
     public static void main(String[] args) {
         Deque<Integer> deque = new LinkedList<>();
