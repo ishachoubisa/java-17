@@ -49,5 +49,28 @@ public class FindOptional {
         Optional<Double> opt3 = average(90,100);
         //opt3.isPresent(System.out::println);
 
+        //Dealing with empty Optional
+        //remaining methods allow you to specify what to do if a value isn't present.
+        Optional<Double> opt4 = average();
+        System.out.println(opt4.orElse(Double.NaN));//you can return a specific value or variable. In our case we print the
+                                                    //"not a number" value
+        System.out.println(opt4.orElseGet(()-> Math.random()));//Using Supplier to generate a value at runtime to return instead
+        System.out.println(opt4.orElseThrow());//Throw an exception if the Optional is empty. Without specifying a Supplier
+                                                 //for the exception,Java will throw NoSuchElementException
+        System.out.println(opt4.orElseThrow(()-> new IllegalStateException()));//We can have a code throw a custom exception
+                                                                              //if the Optional is empty
+
+
+        //The two methods that take a Supplier have different names.
+        //System.out.println(opt4.orElseGet(()-> new IllegalStateException()));//DOES NOT COMPILE
+        // The opt4 variable is an Optional<Double>.This means the Supplier must return a Double.
+        // Since this Supplier returns an exception,the type does not match.
+
+        //What do you think this does?
+        Optional<Double> opt5 = average(90,100);
+        System.out.println(opt5.orElse(Double.NaN));//95.0
+        System.out.println(opt5.orElseGet(()-> Math.random()));//95.0
+        System.out.println(opt5.orElseThrow());//95.0
+        System.out.println(opt5.orElseThrow(()-> new IllegalStateException()));//95.0
     }
 }
